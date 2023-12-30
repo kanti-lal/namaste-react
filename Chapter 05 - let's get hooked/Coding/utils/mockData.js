@@ -8,7 +8,7 @@ export const resList = [
       areaName: 'Koramangala',
       costForTwo: '₹300 for two',
       cuisines: ['American', 'Snacks', 'Turkish', 'Portuguese', 'Continental'],
-      avgRating: 4.3,
+      avgRating: 3.3,
       feeDetails: {
         restaurantId: '65797',
         fees: [
@@ -88,7 +88,7 @@ export const resList = [
       areaName: 'Koramangala',
       costForTwo: '₹500 for two',
       cuisines: ['Biryani', 'Andhra', 'South Indian', 'North Indian'],
-      avgRating: 4.1,
+      avgRating: 3.1,
       feeDetails: {
         restaurantId: '18973',
         fees: [
@@ -239,7 +239,7 @@ export const resList = [
       areaName: 'Koramangala',
       costForTwo: '₹350 for two',
       cuisines: ['Burgers', 'American'],
-      avgRating: 4.2,
+      avgRating: 3.2,
       feeDetails: {
         restaurantId: '5934',
         fees: [
@@ -319,7 +319,7 @@ export const resList = [
       areaName: 'Ejipura',
       costForTwo: '₹400 for two',
       cuisines: ['Burgers', 'Biryani', 'American', 'Snacks', 'Fast Food'],
-      avgRating: 4.1,
+      avgRating: 3,
       feeDetails: {
         restaurantId: '25620',
         fees: [
@@ -505,7 +505,7 @@ export const resList = [
         'Keto',
         'Healthy Food',
       ],
-      avgRating: 4.5,
+      avgRating: 3.5,
       feeDetails: {
         restaurantId: '10820',
         fees: [
@@ -593,7 +593,7 @@ export const resList = [
         'Thalis',
         'Biryani',
       ],
-      avgRating: 4.4,
+      avgRating: 2.4,
       feeDetails: {
         restaurantId: '272239',
         fees: [
@@ -692,7 +692,7 @@ export const resList = [
       areaName: 'Koramangala',
       costForTwo: '₹250 for two',
       cuisines: ['North Indian', 'Biryani', 'Thalis', 'Home Food'],
-      avgRating: 4.3,
+      avgRating: 3.3,
       feeDetails: {
         restaurantId: '289266',
         fees: [
@@ -802,7 +802,7 @@ export const resList = [
         'Street Food',
         'Sweets',
       ],
-      avgRating: 4.4,
+      avgRating: 3.4,
       feeDetails: {
         restaurantId: '263485',
         fees: [
@@ -901,7 +901,7 @@ export const resList = [
       areaName: 'Koramangala',
       costForTwo: '₹450 for two',
       cuisines: ['North Indian', 'Kebabs', 'Biryani'],
-      avgRating: 4.2,
+      avgRating: 3.2,
       feeDetails: {
         restaurantId: '425',
         fees: [
@@ -1099,7 +1099,7 @@ export const resList = [
         'Italian',
         'Turkish',
       ],
-      avgRating: 4.4,
+      avgRating: 3.4,
       feeDetails: {
         restaurantId: '293023',
         fees: [
@@ -1289,7 +1289,7 @@ export const resList = [
         'Chinese',
         'North Indian',
       ],
-      avgRating: 4.1,
+      avgRating: 3.1,
       feeDetails: {
         restaurantId: '139558',
         fees: [
