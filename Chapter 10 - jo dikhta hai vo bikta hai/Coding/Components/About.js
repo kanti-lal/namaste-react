@@ -1,6 +1,5 @@
-// import UserClass from './UserClass';
-import React, { lazy, Suspense } from "react";
-const UserClass = lazy(() => import("./UserClass"));
+import UserClass from './UserClass';
+import React from 'react';
 
 class About extends React.Component {
   constructor(props) {
@@ -24,13 +23,11 @@ class About extends React.Component {
          location={'Ahmedabad (function)'}
        />
       */}
-        <Suspense fallback={<div>This is loading</div>}>
-          <UserClass
-            name={"First"}
-            location={"Ahmedabad (class)"}
-            avatar_url=""
-          />
-        </Suspense>
+        <UserClass
+          name={'First'}
+          location={'Ahmedabad (class)'}
+          avatar_url=''
+        />
       </div>
     );
   }
