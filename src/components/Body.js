@@ -19,7 +19,7 @@ const Body = () => {
 
   const PromoteComponent = withPromoteLabel(RestaurentCard);
 
-  const { setUserName } = useContext(UserContext);
+  const { setUserName, loggedInUser } = useContext(UserContext);
 
   const fetchData = async () => {
     setLoading(true);
@@ -90,6 +90,7 @@ const Body = () => {
           <input
             name="user"
             className="border border-black ml-5"
+            value={loggedInUser}
             onChange={(e) => setUserName(e?.target?.value)}
           />
         </div>

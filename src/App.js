@@ -9,7 +9,11 @@ import Shimmer from "./components/Shimmer";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Login from "./components/Login";
 import UserContext from "./utils/userContext";
-
+import { Provider } from "react-redux";
+import appStore, { persistor } from "./utils/appStore";
+import Cart from "./components/Cart";
+import { PersistGate } from "redux-persist/integration/react";
+import Test from "./components/Test";
 const Grocery = React.lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => {
@@ -25,14 +29,17 @@ const AppLayout = () => {
   }, []);
 
   return (
-    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
-      <div className="app">
-        <UserContext.Provider value={{ loggedInUser: "Elon Musk" }}>
-          <Header />
-        </UserContext.Provider>
-        <Outlet />
-      </div>
-    </UserContext.Provider>
+    <Provider store={appStore}>
+      <PersistGate loading={null} persistor={persistor} />
+      <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+        <div className="app">
+          <UserContext.Provider value={{ loggedInUser: "Kantilal" }}>
+            <Header />
+          </UserContext.Provider>
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -57,6 +64,8 @@ const appRouter = createBrowserRouter([
       },
       { path: "/restaurant/:resId", element: <RestaurantMenu /> },
       { path: "/login", element: <Login /> },
+      { path: "/cart", element: <Cart /> },
+      { path: "/test", element: <Test /> },
     ],
     errorElement: <Error />,
   },

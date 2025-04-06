@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Chapter 11
+
+# Redux Toolkit
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Slide (cartSlice)
+- Dispatch(action)
+- Selector
+
+
+## Chapter 12 
+# Type of testing
+-  unit testing
+-  Integration testing
+-  End to end testing - e2e testing
+-  
+
+# Setting up Testing in our app
+- Install React testing library
+- Install Jest
+- Install Babel dependencies (bcoz we are using babel)
+- config Babel 
+- Configure Parcel config file to disable default babel transpilation
+- Jest configuration ( npx jest --init)
+- Install JSDom library
