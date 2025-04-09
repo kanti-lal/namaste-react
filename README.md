@@ -95,4 +95,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - config Babel 
 - Configure Parcel config file to disable default babel transpilation
 - Jest configuration ( npx jest --init)
-- Install JSDom library
+- Install jsdom library
+- Install @babel/present-react - to make JSX work in test cases
+- include @babel/present-react - inside my babel config
+- Install npm i -D @testing-library/jest-dom
+
+- when we return console.log in test that returns react element 

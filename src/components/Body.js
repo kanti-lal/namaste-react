@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import RestaurentCard, {
+import RestaurantCard, {
   withPromotedLabel,
   withPromoteLabel,
 } from "./RestaurantCard";
@@ -14,17 +14,17 @@ const Body = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const RestauraentCardPromoted = withPromotedLabel(RestaurentCard);
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   const [searchText, setSearchText] = useState("");
 
-  const PromoteComponent = withPromoteLabel(RestaurentCard);
+  // const PromoteComponent = withPromoteLabel(RestaurantCard);
 
   const { setUserName, loggedInUser } = useContext(UserContext);
 
   const fetchData = async () => {
     setLoading(true);
     const data = await fetch(SWIGGY_API_URL);
-    const json = await data.json();
+    const json = await data?.json();
 
     const restaurants =
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
@@ -60,8 +60,10 @@ const Body = () => {
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
+            data-testid="searchInput"
           />
           <button
+            data-testid="searchBtn"
             className="bg-purple-500 text-white px-4 py-1 ml-2 rounded"
             onClick={() => {
               const filteredRestaurant = listOfRestaurants.filter((res) =>
@@ -96,23 +98,23 @@ const Body = () => {
         </div>
       </div>
       <div className="flex flex-wrap">
-        {filteredRestaurants.map((restaurent) => {
+        {filteredRestaurants?.map((restaurant) => {
           return (
             <>
               <Link
-                key={restaurent.info.id}
-                to={"/restaurant/" + restaurent.info.id}
+                key={restaurant.info.id}
+                to={"/restaurant/" + restaurant.info.id}
                 className="link"
               >
-                {restaurent.info.veg ? (
-                  <RestauraentCardPromoted
-                    key={restaurent.info.id}
-                    resData={restaurent}
+                {restaurant.info.veg ? (
+                  <RestaurantCardPromoted
+                    key={restaurant.info.id}
+                    resData={restaurant}
                   />
                 ) : (
-                  <RestaurentCard
-                    key={restaurent.info.id}
-                    resData={restaurent}
+                  <RestaurantCard
+                    key={restaurant.info.id}
+                    resData={restaurant}
                   />
                 )}
               </Link>

@@ -1,0 +1,72 @@
+{
+    "info": {
+        "id": "801244",
+        "name": "Makhani Darbar",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/20/a79458bb-54f0-4ec5-b8f5-128ad696ce72_801244.JPG",
+        "locality": "Ugati Dham FC",
+        "areaName": "Ugti Dham",
+        "costForTwo": "₹500 for two",
+        "cuisines": [
+            "Biryani",
+            "North Indian",
+            "Kebabs",
+            "Mughlai",
+            "Beverages",
+            "Desserts"
+        ],
+        "avgRating": 3.8,
+        "parentId": "478595",
+        "avgRatingString": "3.8",
+        "totalRatingsString": "37",
+        "sla": {
+            "deliveryTime": 24,
+            "lastMileTravel": 2.1,
+            "serviceability": "SERVICEABLE",
+            "slaString": "20-25 mins",
+            "lastMileTravelString": "2.1 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2025-04-08 01:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "₹125 OFF",
+            "subHeader": "ABOVE ₹399",
+            "discountTag": "FLAT DEAL"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+        "context": "seo-data-34276d5c-7a48-4618-b723-ebdfd7b1a463"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/city/ahmedabad/makhani-darbar-ugati-dham-fc-ugti-dham-rest801244",
+        "type": "WEBLINK"
+    }
+}

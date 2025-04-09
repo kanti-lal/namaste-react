@@ -2,7 +2,6 @@ import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCategory";
-// import DummyCat from "./DummyCat";
 import { useState } from "react";
 
 const RestaurantMenu = () => {
@@ -19,10 +18,10 @@ const RestaurantMenu = () => {
   //     ?.card;
 
   const { name, cuisines, costForTwoMessage } =
-    resInfo?.data?.cards[2]?.card?.card?.info;
+    resInfo?.cards[2]?.card?.card?.info;
 
   const filterCategory =
-    resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
       (c) =>
         c.card?.["card"]?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
@@ -34,9 +33,9 @@ const RestaurantMenu = () => {
       <p className="font-bold">
         {cuisines.join(", ")} - {costForTwoMessage}
       </p>
-      {/* accordian create for category */}
+      {/* accordion create for category */}
       {filterCategory.map((category, index) => (
-        // controlled component (its parent RestaurantMenu is controling)
+        // controlled component (its parent RestaurantMenu is controlling)
         <RestaurantCategory
           key={category?.card?.card?.title}
           data={category?.card?.card}
@@ -45,7 +44,7 @@ const RestaurantMenu = () => {
         />
       ))}
 
-      {/* test accordian */}
+      {/* test accordion */}
       {/* {filterCategory.map((cat) => (
         <DummyCat key={cat?.card?.card?.title} data={cat?.card?.card} />
       ))} */}
